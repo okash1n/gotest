@@ -23,4 +23,5 @@
     "extensions": [
         "golang.go"
     ],
+    "postCreateCommand": "apt update && apt install -y git",
 }

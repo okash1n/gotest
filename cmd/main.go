@@ -3,22 +3,14 @@ package main
 import "fmt"
 
 func main() {
+	byteA := []byte{72, 73}
+	fmt.Println(byteA)
 
-	var s string = "Hello Golang"
-	fmt.Println(s)
-	fmt.Printf("%T\n", s)
+	fmt.Println(string(byteA))
 
-	var si string = "300"
-	fmt.Println(si)
-	fmt.Printf("%T\n", si)
+	c := []byte("こんにちは")
+	fmt.Println(c)
 
-	fmt.Println(`test
-	test
-		test`)
-
-	fmt.Println("\"")
-	fmt.Println(`"`)
-
-	fmt.Println(s[0])
+	fmt.Println(string(c))
 
 }

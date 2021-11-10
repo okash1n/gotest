@@ -3,17 +3,16 @@ package main
 import "fmt"
 
 func main() {
-	fmt.Println(1 == 1)
+	fmt.Println(true && false == true)
+	fmt.Println(true && true == true)
+	fmt.Println(true && false == false)
 
-	fmt.Println(1 == 2)
+	fmt.Println(true || false == true)
+	fmt.Println(true || false == true)
+	fmt.Println(false || false == true)
 
-	fmt.Println(4 <= 8)
+	fmt.Println(!true)
 
-	fmt.Println(1 >= 8)
+	fmt.Println(true || true)
 
-	fmt.Println(3 > 1)
-	fmt.Println(1 < 8)
-
-	fmt.Println(true == false)
-	fmt.Println(true != false)
 }

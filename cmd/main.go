@@ -2,12 +2,14 @@ package main
 
 import "fmt"
 
-func ReturnFunc() func() {
-	return func() {
-		fmt.Println("I'm a function")
-	}
-}
-func main() {
-	f := ReturnFunc()
+func CallFunction(f func()) {
 	f()
+}
+
+func Hello() {
+	fmt.Println("Hello")
+}
+
+func main() {
+	CallFunction(Hello)
 }

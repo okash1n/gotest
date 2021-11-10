@@ -2,17 +2,35 @@ package main
 
 import "fmt"
 
+func Plus(x int, y int) int {
+	return x + y
+}
+
+func Div(x, y int) (int, int) {
+	q := x / y
+	r := x % y
+	return q, r
+}
+
+func Double(price int) (result int) {
+	result = price * 2
+	return
+}
+
+func Noreturn() {
+	fmt.Println("No Return")
+	return
+}
+
 func main() {
-	fmt.Println(true && false == true)
-	fmt.Println(true && true == true)
-	fmt.Println(true && false == false)
+	i := Plus(1, 2)
+	fmt.Println(i)
 
-	fmt.Println(true || false == true)
-	fmt.Println(true || false == true)
-	fmt.Println(false || false == true)
+	i2, _ := Div(9, 3)
+	fmt.Println(i2)
 
-	fmt.Println(!true)
+	i4 := Double(1000)
+	fmt.Println(i4)
 
-	fmt.Println(true || true)
-
+	Noreturn()
 }

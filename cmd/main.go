@@ -3,31 +3,17 @@ package main
 import "fmt"
 
 func main() {
-	fmt.Println(1 + 2)
-	fmt.Println("ABC" + "DE")
+	fmt.Println(1 == 1)
 
-	fmt.Println(5 - 1)
+	fmt.Println(1 == 2)
 
-	fmt.Println(5 * 4)
+	fmt.Println(4 <= 8)
 
-	fmt.Println(60 / 3)
+	fmt.Println(1 >= 8)
 
-	fmt.Println(9 % 4)
+	fmt.Println(3 > 1)
+	fmt.Println(1 < 8)
 
-	n := 0
-
-	fmt.Println(n)
-	n += 4 // n = n + 4
-
-	fmt.Println(n)
-
-	n++ // n = n + 1
-	fmt.Println(n)
-
-	n--
-	fmt.Println(n)
-
-	s := "ABC"
-	s += "DEF"
-	fmt.Println(s)
+	fmt.Println(true == false)
+	fmt.Println(true != false)
 }

@@ -2,15 +2,40 @@ package main
 
 import "fmt"
 
+const Pi = 3.14
+const (
+	URL      = "http://xxx.co.jp"
+	SiteName = "test"
+)
+
+const (
+	A = 1
+	B
+	C
+	D = "A"
+	E
+	F
+)
+
+// var Big int = 9223372036854775807 + 1
+const Big = 9223372036854775807 + 1
+
+const (
+	c0 = iota
+	c1
+	c2
+)
+
 func main() {
-	byteA := []byte{72, 73}
-	fmt.Println(byteA)
+	fmt.Println(Pi)
+	/* Pi = 3
+	fmt.Println(Pi) */
 
-	fmt.Println(string(byteA))
+	fmt.Println(URL, SiteName)
+	fmt.Printf("%T\n", URL)
+	fmt.Println(A, B, C, D, E, F)
 
-	c := []byte("こんにちは")
-	fmt.Println(c)
+	fmt.Println(Big - 1)
 
-	fmt.Println(string(c))
-
+	fmt.Println(c0, c1, c2)
 }

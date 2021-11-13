@@ -1,4 +1,4 @@
-FROM golang:1.17.2
+FROM golang:latest
 
 RUN apt update \
   && apt install -y vim
